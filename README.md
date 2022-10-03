@@ -20,11 +20,11 @@ This tutorial is oreinted towards Software Engineers and the main traffic analyz
 
 [Getting Started](http://google.com "Getting Started")
 
-[Configuration Profiles](http://google.com "Configuration Profiles")
+[Configuration Profiles](https://github.com/paramedicjack/Wireshark-for-Software-Engineers/tree/main/Configuration%20Profiles "Configuration Profiles")
 
 [Filters](https://github.com/paramedicjack/Wireshark-for-Software-Engineers/blob/main/Filters/README.md "Filters")
 
-[Colorization](http://google.com "Colorization")
+[Colorization](https://github.com/paramedicjack/Wireshark-for-Software-Engineers/tree/main/Colorization "Colorization")
 
 [Display Settings](http://google.com "Display Settings")
 
