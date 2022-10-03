@@ -18,7 +18,7 @@ This tutorial is oreinted towards Software Engineers and the main traffic analyz
 
 ## Contents
 
-[Getting Started](http://google.com "Getting Started")
+[Getting Started](https://github.com/paramedicjack/Wireshark-for-Software-Engineers/tree/main/Getting%20Started "Getting Started")
 
 [Configuration Profiles](https://github.com/paramedicjack/Wireshark-for-Software-Engineers/tree/main/Configuration%20Profiles "Configuration Profiles")
 
