@@ -44,7 +44,8 @@ Filter buttons are similar to filter bookmarks but are quicker and easier to pre
 
 I created a filter button for UDP packets called `long udp` with the filter expression `ip.proto == udp and frame.len > 200`
 
-TODO: image
+![alt text](https://github.com/paramedicjack/Wireshark-for-Software-Engineers/blob/main/Filters/photos/buttons1.PNG?raw=true)
+![alt text](https://github.com/paramedicjack/Wireshark-for-Software-Engineers/blob/main/Filters/photos/buttons2.PNG?raw=true)
 
 ## Filter macro
 
@@ -58,16 +59,19 @@ Similar to macros in programming languages, macros allow you to create a shortha
 
 I created a macro for long udp packets called `lu` and one for short udp packets called `su`
 
-TODO: image
+![alt text](https://github.com/paramedicjack/Wireshark-for-Software-Engineers/blob/main/Filters/photos/macros3.PNG?raw=true)
+
 
 ### Using a macro
 
 The syntax for a macro is `${[macro name]}`.
-For example, `${su}` will act as a substituttion for our macro `ip.proto == udp and frame.len < 200`
+For example, `${su}` will act as a substitution for our macro `ip.proto == udp and frame.len < 200`
 
-TODO: image
+![alt text](https://github.com/paramedicjack/Wireshark-for-Software-Engineers/blob/main/Filters/photos/macros1.PNG?raw=true)
 
 We can also use macros as a substitution in our `Filter buttons` and `Filter bookmarks`
+
+![alt text](https://github.com/paramedicjack/Wireshark-for-Software-Engineers/blob/main/Filters/photos/macros2.PNG?raw=true)
 
 ### Variable macros
 
@@ -75,11 +79,11 @@ Filter macros can also take variables. Variables come in the form of `$[number]`
 
 I've created a variable macro called `protolt` with the expression `ip.proto == $1 and frame.len < $2` where `$1` is the protocol and `$2` is the largest filtered length
 
-TODO: image
+![alt text](https://github.com/paramedicjack/Wireshark-for-Software-Engineers/blob/main/Filters/photos/macros3.PNG)
 
 Here's how you call it `${protolt:udp;61}`
 
-TODO: image
+![alt text](https://github.com/paramedicjack/Wireshark-for-Software-Engineers/blob/main/Filters/photos/macros4.PNG)
 
 ## Building filter expressions
 
