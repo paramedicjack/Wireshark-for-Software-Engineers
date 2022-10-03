@@ -10,7 +10,11 @@ Filters allow you to isolate the wireshark traffic that you want to see. Filters
 
 and more. In this tutorial we will be exploring some ways to use, create, and combine filters.
 
-If you have not already please download the filters.cap file. 
+Please download the following sample capture file
+
+[Packets.cap](https://github.com/paramedicjack/Wireshark-for-Software-Engineers/blob/main/Filters/sample_captures/Packets.cap "Packets")
+
+and open it in wireshark. 
 
 ## Copying a filter
 
@@ -91,13 +95,13 @@ Here's how you call it `${protolt:udp;61}`
 
 Filter expressions use similar logic to programming languages such as `eq (==)`, `gt (>)`, and `le (<=)`. Here are some filter expressions you can try out with our dataset
 
-* `ip.src == 192.168.0.1`
+* `ip.src == 10.0.0.10`
 * `udp.dstport >= 40000`
 * `udp.srcport != 50000`
 
 Additionally, `contains` will determine if a protocol or slice contains values and `match` will filter packets with perl-compatible regex. Try these filter expressions out with our dataset.
 
-* `udp contains 55:13:22`
+* `udp contains 20:0d:0a:32`
 
 TODO: more examples
 
@@ -107,26 +111,18 @@ You can also use in `in` for some filter expressions to replace multiple `==`, l
 
 You can use logical `and (&&)`, `or (||)`, `not (!)`, and more to create combined expressions. Here are some combined filters we can use to produce subsets of our data
 
-* `ip.src == 192.168.0.1 and ip.proto == udp and frame.len >= 60`
-* `frame.len >= 60 and udp contains 55:13:22`
+* `ip.src == 10.0.0.10 and ip.proto == udp and frame.len >= 150`
+* `frame.len >= 150 and udp contains 20:0d:0a:32`
 
 ## Exercises
 
-Create a UDP filter for IP sources `192.168.0.1, 192.168.0.2, ... 192.168.0.9` with destination ports `50000...52000`
+Create a UDP filter for IP sources `10.0.0.10, 10.0.0.11, ... 10.0.0.19` with destination ports `40000...50000`
 
 <details><summary>Possible solution</summary>
     <pre>
-    ip.src >= 192.168.0.1 and ip.src <= 192.168.0.9 and udp.dstport >= 50000 and udp.dstport <= 52000
+    ip.src >= 10.0.0.10 and ip.src <= 10.0.0.19 and udp.dstport >= 40000 and udp.dstport <= 50000
     </pre>
     note: the presence of the udp.dstport filter gets rid of other traffic so we don't need a separate udp filter
-</details>
-
-Create a filter for UDP packets with odd destination ports that contain the bytes `a4 00 13`
-
-<details><summary>Possible solution</summary>
-    <pre>
-    udp.dstport %2 == 1 and udp contains a4:00:13
-    </pre>
 </details>
 
 Create multiple macros and use them to create a combined filter
@@ -134,7 +130,7 @@ Create multiple macros and use them to create a combined filter
 <details><summary>Possible solution</summary>
     <pre>
     $long frame.len > 200
-    $iprange ip.src >= 192.168.0.1 and ip.src <= 192.168.0.9
+    $iprange ip.src >= 10.0.0.10 and ip.src <= 10.0.0.19
     ${long} and !(${iprange})
     </pre>
 </details>
@@ -144,7 +140,7 @@ Create and use a UDP filter macro that takes two IP addresses (source and destin
 <details><summary>Possible solution</summary>
     <pre>
     $udprange udp.srcport == $1 and udp.dstport == $2 and frame.len >= $3 and frame.len <= $4
-    ${udprange:10.0.0.1;10.0.02;50;75}
+    ${udprange:10.0.0.10;10.0.20;50;75}
     </pre>
 </details>
 
