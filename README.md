@@ -10,11 +10,7 @@ This tutorial aims to be a start to finish solution for beginners to learn enoug
 
 Many tutorials out there do not contain sample captures. This tutorial aims to give you a chance to explore everything that you learn with sample traffic so you get a fuller experience of probing network traffic similar to what you might learn on the job.
 
-Wireshark documentation is generally informative, however it can be sparse in some particular areas. This tutorial will aim to bridge that gap.
-
-## Focus
-
-This tutorial is oreinted towards Software Engineers and the main traffic analyzed will be in UDP and TCP packets. 
+Wireshark documentation is generally informative, however it can be sparse in the implementation. This tutorial will aim to bridge that gap.
 
 ## Contents
 
@@ -30,6 +26,6 @@ This tutorial is oreinted towards Software Engineers and the main traffic analyz
 
 [Analyzing Data](http://google.com "Analyzing Data")
 
-[Dissectors](http://google.com "Dissectors")
+[Dissectors](https://github.com/paramedicjack/Wireshark-for-Software-Engineers/tree/main/Dissectors "Dissectors")
 
 [Exporting](http://google.com "Exporting")

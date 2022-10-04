@@ -1,10 +1,6 @@
 # Configuration Profiles
 
-Not everyone on a team is a Wireshark wizard. A lot of your teammates will know just enought to open wireshark and to follow the instructions they've been given on how to read the data they need to see. So, how can you get them that data in the best way without making them actually learn to use Wireshark?
-
-Configuration Profiles.
-
-Configuration Profiles allow you to export and import all of your custom filters, buttons, macros, colorizations, and more to different installations. It makes life easy whenever you have to change setups and is a must in team environments.
+Configuration Profiles allow you to export and import all of your custom filters, buttons, macros, colorizations, and more to different installations. Configuration profiles are extremely useful in team environments or for post capture analysis.
 
 ## Creating a Configuration Profile
 
