@@ -24,8 +24,6 @@ Wireshark documentation is generally informative, however it can be sparse in th
 
 [Display Settings](http://google.com "Display Settings")
 
-[Analyzing Data](http://google.com "Analyzing Data")
+[Analyzing and Exporting Data](https://github.com/paramedicjack/Wireshark-for-Software-Engineers/tree/main/Analyzing%20and%20Exporting%20Data "Analyzing Data")
 
 [Dissectors](https://github.com/paramedicjack/Wireshark-for-Software-Engineers/tree/main/Dissectors "Dissectors")
-
-[Exporting](http://google.com "Exporting")
