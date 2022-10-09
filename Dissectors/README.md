@@ -24,3 +24,5 @@ Dissectors can be written in lua or C.
 [1 Simple Dissector](https://github.com/paramedicjack/Wireshark-for-Software-Engineers/tree/main/Dissectors/1%20Simple%20Dissector "1 Simple Dissector")
 
 [2 More Protos](https://github.com/paramedicjack/Wireshark-for-Software-Engineers/tree/main/Dissectors/2%20More%20Protos "2 More Protos")
+
+[3 Dropdowns](https://github.com/paramedicjack/Wireshark-for-Software-Engineers/blob/main/Dissectors/3%20Dropdowns/README.md "3 Dropdowns")
