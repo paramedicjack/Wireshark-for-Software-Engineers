@@ -26,3 +26,5 @@ Dissectors can be written in lua or C.
 [2 More Protos](https://github.com/paramedicjack/Wireshark-for-Software-Engineers/tree/main/Dissectors/2%20More%20Protos "2 More Protos")
 
 [3 Dropdowns](https://github.com/paramedicjack/Wireshark-for-Software-Engineers/blob/main/Dissectors/3%20Dropdowns/README.md "3 Dropdowns")
+
+[4 Add Text](https://github.com/paramedicjack/Wireshark-for-Software-Engineers/blob/main/Dissectors/4%20Add%20Text/README.md "4 Add Text")
